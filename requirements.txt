@@ -1,0 +1,8 @@
+# Core dependencies for Icon_Empirical reproducibility.
+#
+# Versions are minimums tested with; later versions should work.
+# All other modules used are Python standard library.
+
+torch>=2.5.0
+torchvision>=0.20.0
+numpy>=2.0.0

@@ -1,0 +1,602 @@
+{
+  "profiles": {
+    "boltzmann": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.023305,
+        0.023305,
+        0.023305,
+        0.023305,
+        0.023305
+      ],
+      "kappa_task": [
+        0.008624,
+        0.008624,
+        0.008624,
+        0.008624,
+        0.008624
+      ],
+      "ki_change_pct": 0.0,
+      "kt_change_pct": 0.0
+    },
+    "cnn": {
+      "depths": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "kappa_input": [
+        0.021495,
+        0.021548,
+        0.021476,
+        0.021222
+      ],
+      "kappa_task": [
+        0.007842,
+        0.008491,
+        0.008612,
+        0.008612
+      ],
+      "ki_change_pct": -1.27,
+      "kt_change_pct": 9.81
+    },
+    "gru": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.022714,
+        0.022621,
+        0.022429,
+        0.02205,
+        0.02205
+      ],
+      "kappa_task": [
+        0.00841,
+        0.008634,
+        0.008654,
+        0.008525,
+        0.008525
+      ],
+      "ki_change_pct": -2.92,
+      "kt_change_pct": 1.36
+    },
+    "mlp": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.022791,
+        0.022962,
+        0.023037,
+        0.022982,
+        0.022986
+      ],
+      "kappa_task": [
+        0.008364,
+        0.00875,
+        0.008877,
+        0.008903,
+        0.008915
+      ],
+      "ki_change_pct": 0.85,
+      "kt_change_pct": 6.58
+    },
+    "parallel": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.022512,
+        0.02248,
+        0.022474,
+        0.022439,
+        0.022316
+      ],
+      "kappa_task": [
+        0.007948,
+        0.007983,
+        0.007906,
+        0.00774,
+        0.007542
+      ],
+      "ki_change_pct": -0.87,
+      "kt_change_pct": -5.11
+    },
+    "serial": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.022517,
+        0.022256,
+        0.021882,
+        0.017327,
+        0.0
+      ],
+      "kappa_task": [
+        0.007919,
+        0.008112,
+        0.007686,
+        0.002424,
+        0.0
+      ],
+      "ki_change_pct": -100.0,
+      "kt_change_pct": -100.0
+    },
+    "transformer_postln": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.022877,
+        0.022803,
+        0.022489,
+        0.019409,
+        0.021106
+      ],
+      "kappa_task": [
+        0.008614,
+        0.008753,
+        0.008736,
+        0.003943,
+        0.001429
+      ],
+      "ki_change_pct": -7.74,
+      "kt_change_pct": -83.41
+    },
+    "transformer_preln": {
+      "depths": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "kappa_input": [
+        0.022739,
+        0.022703,
+        0.022651,
+        0.022567,
+        0.022437
+      ],
+      "kappa_task": [
+        0.008723,
+        0.008709,
+        0.008708,
+        0.008682,
+        0.008596
+      ],
+      "ki_change_pct": -1.33,
+      "kt_change_pct": -1.45
+    }
+  },
+  "depth_invariant": [
+    "boltzmann",
+    "cnn",
+    "gru",
+    "mlp",
+    "parallel",
+    "transformer_preln"
+  ],
+  "depth_sensitive": [
+    "serial",
+    "transformer_postln"
+  ],
+  "exp_fits": {
+    "serial": {
+      "kappa_star": 0.0,
+      "A": 0.026616,
+      "xi": 12.0,
+      "r2": 0.799102,
+      "d_star": 36.0
+    },
+    "transformer_postln": {
+      "kappa_star": 0.021001,
+      "A": 0.002996,
+      "xi": 3.0,
+      "r2": 0.560056,
+      "d_star": 9.0
+    }
+  },
+  "d_effective": {
+    "boltzmann": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        }
+      ]
+    },
+    "cnn": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L1_ffn_out",
+          "d_effective": 0.032787,
+          "delta_d_eff": 0.032787,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L2_ffn_out",
+          "d_effective": 0.04373,
+          "delta_d_eff": 0.010943,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L3_ffn_out",
+          "d_effective": 0.090049,
+          "delta_d_eff": 0.046319,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L4_ffn_out",
+          "d_effective": 0.073518,
+          "delta_d_eff": -0.016531,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L5_ffn_out",
+          "d_effective": 0.135784,
+          "delta_d_eff": 0.062266,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L6_ffn_out",
+          "d_effective": 0.034369,
+          "delta_d_eff": -0.101415,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L7_ffn_out",
+          "d_effective": 0.128396,
+          "delta_d_eff": 0.094027,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 0.002388,
+          "delta_d_eff": -0.126008,
+          "is_fixed_point": false
+        }
+      ]
+    },
+    "gru": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L1_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L2_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L3_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L4_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L5_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L6_ffn_out",
+          "d_effective": 0.003665,
+          "delta_d_eff": 0.003665,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L7_ffn_out",
+          "d_effective": 0.029612,
+          "delta_d_eff": 0.025947,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 0.092406,
+          "delta_d_eff": 0.062794,
+          "is_fixed_point": false
+        }
+      ]
+    },
+    "mlp": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L1_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L2_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L3_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L4_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L5_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L6_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L7_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        }
+      ]
+    },
+    "serial": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L1_ffn_out",
+          "d_effective": 0.784871,
+          "delta_d_eff": 0.784871,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L2_ffn_out",
+          "d_effective": 1.677981,
+          "delta_d_eff": 0.89311,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L3_ffn_out",
+          "d_effective": 1.672182,
+          "delta_d_eff": -0.005799,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L4_ffn_out",
+          "d_effective": 1.684762,
+          "delta_d_eff": 0.01258,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L5_ffn_out",
+          "d_effective": 1.106704,
+          "delta_d_eff": -0.578058,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L6_ffn_out",
+          "d_effective": 0.586054,
+          "delta_d_eff": -0.52065,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L7_ffn_out",
+          "d_effective": 1.271019,
+          "delta_d_eff": 0.684965,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 1.271019,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        }
+      ]
+    },
+    "transformer_postln": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L1_ffn_out",
+          "d_effective": 0.11756,
+          "delta_d_eff": 0.11756,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L2_ffn_out",
+          "d_effective": 0.466636,
+          "delta_d_eff": 0.349076,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L3_ffn_out",
+          "d_effective": 0.806435,
+          "delta_d_eff": 0.339799,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L4_ffn_out",
+          "d_effective": 0.909639,
+          "delta_d_eff": 0.103204,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L5_ffn_out",
+          "d_effective": 1.110985,
+          "delta_d_eff": 0.201346,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L6_ffn_out",
+          "d_effective": 1.161267,
+          "delta_d_eff": 0.050282,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "L7_ffn_out",
+          "d_effective": 0.572808,
+          "delta_d_eff": -0.588459,
+          "is_fixed_point": false
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 0.611884,
+          "delta_d_eff": 0.039076,
+          "is_fixed_point": false
+        }
+      ]
+    },
+    "transformer_preln": {
+      "d_star_tap": "L0_ffn_out",
+      "profile": [
+        {
+          "tap_name": "L0_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L1_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L2_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L3_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L4_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L5_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L6_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "L7_ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        },
+        {
+          "tap_name": "ffn_out",
+          "d_effective": 0.0,
+          "delta_d_eff": 0.0,
+          "is_fixed_point": true
+        }
+      ]
+    }
+  }
+}

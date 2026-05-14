@@ -1,0 +1,24 @@
+{
+  "c_arch": {
+    "gru": 5.71474,
+    "transformer_preln": 5.757052,
+    "mlp": 5.865864,
+    "cnn": 5.476155,
+    "transformer_postln": 5.661654,
+    "serial": 5.563169,
+    "boltzmann": 5.932999,
+    "parallel": 5.738014
+  },
+  "kappa_input": {
+    "alpha": -0.99685,
+    "beta": -0.014893,
+    "r2": 0.998787,
+    "n": 633
+  },
+  "kappa_task": {
+    "alpha": -1.164183,
+    "beta": -0.154174,
+    "r2": 0.8123,
+    "n": 633
+  }
+}

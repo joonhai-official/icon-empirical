@@ -1,0 +1,243 @@
+{
+  "analyses": {
+    "transformer_preln|w256|gelu|cifar10": {
+      "ki_info": {
+        "pattern": "monotone_inc",
+        "phase_change_epoch": null,
+        "initial_kappa": 0.021939,
+        "min_kappa": 0.021939,
+        "final_kappa": 0.022547,
+        "total_change_pct": 2.77
+      },
+      "epochs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "ki_means": [
+        0.021939,
+        0.022271,
+        0.022447,
+        0.022547
+      ],
+      "kt_means": [
+        0.007275,
+        0.008044,
+        0.008516,
+        0.008686
+      ],
+      "acc_means": [
+        0.368246,
+        0.445394,
+        0.545858,
+        0.619588
+      ],
+      "r_kappa_task_vs_acc": 0.96264,
+      "r_kappa_input_vs_acc": 0.965494
+    },
+    "transformer_preln|w256|relu|cifar10": {
+      "ki_info": {
+        "pattern": "monotone_inc",
+        "phase_change_epoch": null,
+        "initial_kappa": 0.021915,
+        "min_kappa": 0.021915,
+        "final_kappa": 0.02263,
+        "total_change_pct": 3.26
+      },
+      "epochs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "ki_means": [
+        0.021915,
+        0.022232,
+        0.022494,
+        0.02263
+      ],
+      "kt_means": [
+        0.006969,
+        0.008035,
+        0.00856,
+        0.008722
+      ],
+      "acc_means": [
+        0.37146,
+        0.462972,
+        0.547607,
+        0.618408
+      ],
+      "r_kappa_task_vs_acc": 0.960338,
+      "r_kappa_input_vs_acc": 0.993731
+    },
+    "transformer_preln|w256|tanh|cifar10": {
+      "ki_info": {
+        "pattern": "monotone_inc",
+        "phase_change_epoch": null,
+        "initial_kappa": 0.021442,
+        "min_kappa": 0.021442,
+        "final_kappa": 0.022391,
+        "total_change_pct": 4.43
+      },
+      "epochs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "ki_means": [
+        0.021442,
+        0.021915,
+        0.022184,
+        0.022391
+      ],
+      "kt_means": [
+        0.006399,
+        0.007221,
+        0.007969,
+        0.008301
+      ],
+      "acc_means": [
+        0.319621,
+        0.384888,
+        0.485514,
+        0.549805
+      ],
+      "r_kappa_task_vs_acc": 0.98566,
+      "r_kappa_input_vs_acc": 0.973818
+    },
+    "transformer_preln|w64|gelu|cifar10": {
+      "ki_info": {
+        "pattern": "monotone_inc",
+        "phase_change_epoch": null,
+        "initial_kappa": 0.088387,
+        "min_kappa": 0.088387,
+        "final_kappa": 0.089329,
+        "total_change_pct": 1.07
+      },
+      "epochs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "ki_means": [
+        0.088387,
+        0.088676,
+        0.089039,
+        0.089329
+      ],
+      "kt_means": [
+        0.026593,
+        0.029616,
+        0.031902,
+        0.032894
+      ],
+      "acc_means": [
+        0.378621,
+        0.433675,
+        0.552938,
+        0.614339
+      ],
+      "r_kappa_task_vs_acc": 0.967026,
+      "r_kappa_input_vs_acc": 0.994833
+    },
+    "transformer_preln|w64|relu|cifar10": {
+      "ki_info": {
+        "pattern": "monotone_inc",
+        "phase_change_epoch": null,
+        "initial_kappa": 0.088802,
+        "min_kappa": 0.088802,
+        "final_kappa": 0.089323,
+        "total_change_pct": 0.59
+      },
+      "epochs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "ki_means": [
+        0.088802,
+        0.089004,
+        0.089357,
+        0.089323
+      ],
+      "kt_means": [
+        0.027254,
+        0.029957,
+        0.032228,
+        0.033092
+      ],
+      "acc_means": [
+        0.384115,
+        0.436279,
+        0.549113,
+        0.602498
+      ],
+      "r_kappa_task_vs_acc": 0.972908,
+      "r_kappa_input_vs_acc": 0.958756
+    },
+    "transformer_preln|w64|tanh|cifar10": {
+      "ki_info": {
+        "pattern": "monotone_inc",
+        "phase_change_epoch": null,
+        "initial_kappa": 0.088107,
+        "min_kappa": 0.088107,
+        "final_kappa": 0.089442,
+        "total_change_pct": 1.51
+      },
+      "epochs": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "ki_means": [
+        0.088107,
+        0.088637,
+        0.08927,
+        0.089442
+      ],
+      "kt_means": [
+        0.025954,
+        0.028054,
+        0.03066,
+        0.031737
+      ],
+      "acc_means": [
+        0.351888,
+        0.403239,
+        0.496094,
+        0.552124
+      ],
+      "r_kappa_task_vs_acc": 0.991695,
+      "r_kappa_input_vs_acc": 0.982985
+    }
+  },
+  "pattern_counts": {
+    "monotone_inc": 6
+  },
+  "by_activation": {
+    "relu": {
+      "u_shape_count": 0,
+      "total": 2
+    },
+    "gelu": {
+      "u_shape_count": 0,
+      "total": 2
+    },
+    "tanh": {
+      "u_shape_count": 0,
+      "total": 2
+    }
+  },
+  "kappa_vs_acc": {
+    "mean_r_kappa_task": 0.9734,
+    "mean_r_kappa_input": 0.9783,
+    "n_conditions": 6,
+    "claim_supported": true
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "c_arch": {
+    "boltzmann": {
+      "c_arch": 5.933,
+      "rank": 1,
+      "relative_efficiency": 1.0
+    },
+    "mlp": {
+      "c_arch": 5.8659,
+      "rank": 2,
+      "relative_efficiency": 0.9887
+    },
+    "transformer_preln": {
+      "c_arch": 5.7571,
+      "rank": 3,
+      "relative_efficiency": 0.9703
+    },
+    "parallel": {
+      "c_arch": 5.738,
+      "rank": 4,
+      "relative_efficiency": 0.9671
+    },
+    "gru": {
+      "c_arch": 5.7147,
+      "rank": 5,
+      "relative_efficiency": 0.9632
+    },
+    "transformer_postln": {
+      "c_arch": 5.6617,
+      "rank": 6,
+      "relative_efficiency": 0.9543
+    },
+    "serial": {
+      "c_arch": 5.5632,
+      "rank": 7,
+      "relative_efficiency": 0.9377
+    },
+    "cnn": {
+      "c_arch": 5.4786,
+      "rank": 8,
+      "relative_efficiency": 0.9234
+    }
+  },
+  "memory_design": {
+    "1MB": {
+      "boltzmann": {
+        "w_star": 64,
+        "memory_mb": 0.764,
+        "kappa_est": 0.096881
+      },
+      "mlp": {
+        "w_star": 32,
+        "memory_mb": 0.382,
+        "kappa_est": 0.190169
+      },
+      "transformer_preln": {
+        "w_star": 32,
+        "memory_mb": 0.327,
+        "kappa_est": 0.186642
+      },
+      "parallel": {
+        "w_star": 64,
+        "memory_mb": 0.515,
+        "kappa_est": 0.093697
+      },
+      "gru": {
+        "w_star": 64,
+        "memory_mb": 0.392,
+        "kappa_est": 0.093317
+      },
+      "transformer_postln": {
+        "w_star": 32,
+        "memory_mb": 0.327,
+        "kappa_est": 0.183549
+      },
+      "serial": {
+        "w_star": 64,
+        "memory_mb": 0.514,
+        "kappa_est": 0.090843
+      },
+      "cnn": {
+        "w_star": 16,
+        "memory_mb": 0.393,
+        "kappa_est": 0.352625
+      }
+    },
+    "10MB": {
+      "boltzmann": {
+        "w_star": 512,
+        "memory_mb": 6.033,
+        "kappa_est": 0.01238
+      },
+      "mlp": {
+        "w_star": 128,
+        "memory_mb": 4.153,
+        "kappa_est": 0.048246
+      },
+      "transformer_preln": {
+        "w_star": 128,
+        "memory_mb": 5.06,
+        "kappa_est": 0.047351
+      },
+      "parallel": {
+        "w_star": 256,
+        "memory_mb": 8.061,
+        "kappa_est": 0.023771
+      },
+      "gru": {
+        "w_star": 256,
+        "memory_mb": 6.068,
+        "kappa_est": 0.023674
+      },
+      "transformer_postln": {
+        "w_star": 128,
+        "memory_mb": 5.06,
+        "kappa_est": 0.046566
+      },
+      "serial": {
+        "w_star": 256,
+        "memory_mb": 8.057,
+        "kappa_est": 0.023047
+      },
+      "cnn": {
+        "w_star": 64,
+        "memory_mb": 6.259,
+        "kappa_est": 0.089461
+      }
+    },
+    "100MB": {
+      "boltzmann": {
+        "w_star": 4096,
+        "memory_mb": 48.184,
+        "kappa_est": 0.001582
+      },
+      "mlp": {
+        "w_star": 512,
+        "memory_mb": 64.238,
+        "kappa_est": 0.01224
+      },
+      "transformer_preln": {
+        "w_star": 512,
+        "memory_mb": 80.238,
+        "kappa_est": 0.012013
+      },
+      "parallel": {
+        "w_star": 512,
+        "memory_mb": 32.121,
+        "kappa_est": 0.011973
+      },
+      "gru": {
+        "w_star": 1024,
+        "memory_mb": 96.273,
+        "kappa_est": 0.006006
+      },
+      "transformer_postln": {
+        "w_star": 512,
+        "memory_mb": 80.238,
+        "kappa_est": 0.011814
+      },
+      "serial": {
+        "w_star": 512,
+        "memory_mb": 32.113,
+        "kappa_est": 0.011608
+      },
+      "cnn": {
+        "w_star": 128,
+        "memory_mb": 25.018,
+        "kappa_est": 0.045061
+      }
+    },
+    "1000MB": {
+      "boltzmann": {
+        "w_star": 4096,
+        "memory_mb": 48.184,
+        "kappa_est": 0.001582
+      },
+      "mlp": {
+        "w_star": 1024,
+        "memory_mb": 256.352,
+        "kappa_est": 0.006165
+      },
+      "transformer_preln": {
+        "w_star": 1024,
+        "memory_mb": 320.477,
+        "kappa_est": 0.006051
+      },
+      "parallel": {
+        "w_star": 2048,
+        "memory_mb": 512.484,
+        "kappa_est": 0.003038
+      },
+      "gru": {
+        "w_star": 2048,
+        "memory_mb": 384.547,
+        "kappa_est": 0.003025
+      },
+      "transformer_postln": {
+        "w_star": 1024,
+        "memory_mb": 320.477,
+        "kappa_est": 0.005951
+      },
+      "serial": {
+        "w_star": 2048,
+        "memory_mb": 512.453,
+        "kappa_est": 0.002945
+      },
+      "cnn": {
+        "w_star": 512,
+        "memory_mb": 400.072,
+        "kappa_est": 0.011432
+      }
+    }
+  },
+  "hw_efficiency": {
+    "boltzmann": {
+      "eta_mean": 0.9511,
+      "eta_min": 0.9407,
+      "eta_max": 0.9601
+    },
+    "cnn": {
+      "eta_mean": 0.8809,
+      "eta_min": 0.8687,
+      "eta_max": 0.8923
+    },
+    "gru": {
+      "eta_mean": 0.9174,
+      "eta_min": 0.8944,
+      "eta_max": 0.9366
+    },
+    "mlp": {
+      "eta_mean": 0.9383,
+      "eta_min": 0.9247,
+      "eta_max": 0.9498
+    },
+    "parallel": {
+      "eta_mean": 0.9183,
+      "eta_min": 0.9076,
+      "eta_max": 0.9255
+    },
+    "serial": {
+      "eta_mean": 0.8918,
+      "eta_min": 0.8818,
+      "eta_max": 0.8997
+    },
+    "transformer_postln": {
+      "eta_mean": 0.898,
+      "eta_min": 0.8067,
+      "eta_max": 0.9258
+    },
+    "transformer_preln": {
+      "eta_mean": 0.9203,
+      "eta_min": 0.8973,
+      "eta_max": 0.9308
+    },
+    "_summary": {
+      "grand_mean_eta": 0.9161
+    }
+  },
+  "pruning": {
+    "serial|w256": {
+      "d_c": 14,
+      "d_full": 16,
+      "params_full": 8403456,
+      "params_pruned": 6830592,
+      "saving_pct": 18.72
+    },
+    "serial|w512": {
+      "d_c": 8,
+      "d_full": 16,
+      "params_full": 33584128,
+      "params_pruned": 14709760,
+      "saving_pct": 56.2
+    }
+  },
+  "inverse_design": {
+    "Smartphone NPU": {
+      "arch": "serial",
+      "width": 256,
+      "depth": 4,
+      "memory_mb": 8.06,
+      "kappa_achieved": 0.022423,
+      "kappa_target": 0.02,
+      "kappa_error_pct": 12.11
+    },
+    "Automotive ADAS": {
+      "arch": "boltzmann",
+      "width": 512,
+      "depth": 4,
+      "memory_mb": 6.03,
+      "kappa_achieved": 0.012045,
+      "kappa_target": 0.015,
+      "kappa_error_pct": 19.7
+    },
+    "Server GPU": {
+      "arch": "cnn",
+      "width": 1024,
+      "depth": 4,
+      "memory_mb": 1600.14,
+      "kappa_achieved": 0.005602,
+      "kappa_target": 0.005,
+      "kappa_error_pct": 12.04
+    },
+    "IoT micro": {
+      "arch": "boltzmann",
+      "width": 128,
+      "depth": 4,
+      "memory_mb": 1.52,
+      "kappa_achieved": 0.047477,
+      "kappa_target": 0.05,
+      "kappa_error_pct": 5.05
+    },
+    "Space onboard": {
+      "arch": "boltzmann",
+      "width": 256,
+      "depth": 4,
+      "memory_mb": 3.02,
+      "kappa_achieved": 0.023913,
+      "kappa_target": 0.03,
+      "kappa_error_pct": 20.29
+    }
+  }
+}

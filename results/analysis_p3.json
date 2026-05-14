@@ -1,0 +1,517 @@
+{
+  "sigma": {
+    "boltzmann|cifar10": {
+      "sigma_star": 0.02,
+      "kappa_at_sigma_star": 0.023317,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.023315,
+        "0.02": 0.023317,
+        "0.05": 0.02331,
+        "0.1": 0.023305,
+        "0.2": 0.023275,
+        "0.5": 0.023078,
+        "1.0": 0.022827
+      }
+    },
+    "cnn|cifar10": {
+      "sigma_star": 1.0,
+      "kappa_at_sigma_star": 0.022813,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.021401,
+        "0.02": 0.021493,
+        "0.5": 0.022495,
+        "1.0": 0.022813
+      }
+    },
+    "gru|cifar10": {
+      "sigma_star": 1.0,
+      "kappa_at_sigma_star": 0.022764,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.022435,
+        "0.02": 0.022433,
+        "0.05": 0.022446,
+        "0.1": 0.022429,
+        "0.2": 0.022426,
+        "0.5": 0.022536,
+        "1.0": 0.022764
+      }
+    },
+    "mlp|cifar10": {
+      "sigma_star": 0.1,
+      "kappa_at_sigma_star": 0.023037,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.02303,
+        "0.02": 0.023034,
+        "0.05": 0.023032,
+        "0.1": 0.023037,
+        "0.2": 0.023009,
+        "0.5": 0.022948,
+        "1.0": 0.022854
+      }
+    },
+    "parallel|cifar10": {
+      "sigma_star": 1.0,
+      "kappa_at_sigma_star": 0.022776,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.022501,
+        "0.02": 0.022509,
+        "0.05": 0.022487,
+        "0.1": 0.022474,
+        "0.2": 0.022459,
+        "0.5": 0.022555,
+        "1.0": 0.022776
+      }
+    },
+    "serial|cifar10": {
+      "sigma_star": 1.0,
+      "kappa_at_sigma_star": 0.022779,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.021855,
+        "0.02": 0.021864,
+        "0.05": 0.021856,
+        "0.1": 0.021882,
+        "0.2": 0.021987,
+        "0.5": 0.022397,
+        "1.0": 0.022779
+      }
+    },
+    "transformer_postln|cifar10": {
+      "sigma_star": 1.0,
+      "kappa_at_sigma_star": 0.022775,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.022517,
+        "0.02": 0.022504,
+        "0.05": 0.022504,
+        "0.1": 0.022489,
+        "0.2": 0.022483,
+        "0.5": 0.022553,
+        "1.0": 0.022775
+      }
+    },
+    "transformer_preln|cifar10": {
+      "sigma_star": 1.0,
+      "kappa_at_sigma_star": 0.022771,
+      "is_monotone_dec": false,
+      "curve": {
+        "0.01": 0.022646,
+        "0.02": 0.022651,
+        "0.05": 0.022656,
+        "0.1": 0.022651,
+        "0.2": 0.022627,
+        "0.5": 0.022657,
+        "1.0": 0.022771
+      }
+    }
+  },
+  "temperature": {
+    "boltzmann|relu|w256|d16|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.018642,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.023022,
+        "0.1": 0.023152,
+        "1.0": 0.023305,
+        "10.0": 0.023154,
+        "100.0": 0.022112
+      }
+    },
+    "boltzmann|relu|w256|d1|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.018642,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.023022,
+        "0.1": 0.023152,
+        "1.0": 0.023305,
+        "10.0": 0.023154,
+        "100.0": 0.022112
+      }
+    },
+    "boltzmann|relu|w256|d32|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.018642,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.023022,
+        "0.1": 0.023152,
+        "1.0": 0.023305,
+        "10.0": 0.023154,
+        "100.0": 0.022112
+      }
+    },
+    "boltzmann|relu|w256|d4|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.018642,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.023022,
+        "0.1": 0.023152,
+        "1.0": 0.023305,
+        "10.0": 0.023154,
+        "100.0": 0.022112
+      }
+    },
+    "boltzmann|relu|w256|d8|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.018642,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.023022,
+        "0.1": 0.023152,
+        "1.0": 0.023305,
+        "10.0": 0.023154,
+        "100.0": 0.022112
+      }
+    },
+    "boltzmann|relu|w512|d16|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.019695,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.011558,
+        "0.1": 0.011622,
+        "1.0": 0.011681,
+        "10.0": 0.01161,
+        "100.0": 0.01106
+      }
+    },
+    "boltzmann|relu|w512|d1|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.019695,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.011558,
+        "0.1": 0.011622,
+        "1.0": 0.011681,
+        "10.0": 0.01161,
+        "100.0": 0.01106
+      }
+    },
+    "boltzmann|relu|w512|d32|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.019695,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.011558,
+        "0.1": 0.011622,
+        "1.0": 0.011681,
+        "10.0": 0.01161,
+        "100.0": 0.01106
+      }
+    },
+    "boltzmann|relu|w512|d4|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.019695,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.011558,
+        "0.1": 0.011622,
+        "1.0": 0.011681,
+        "10.0": 0.01161,
+        "100.0": 0.01106
+      }
+    },
+    "boltzmann|relu|w512|d8|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.019695,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.011558,
+        "0.1": 0.011622,
+        "1.0": 0.011681,
+        "10.0": 0.01161,
+        "100.0": 0.01106
+      }
+    },
+    "boltzmann|relu|w64|d16|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.011082,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.089927,
+        "0.1": 0.090998,
+        "1.0": 0.09174,
+        "10.0": 0.092184,
+        "100.0": 0.089573
+      }
+    },
+    "boltzmann|relu|w64|d1|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.011082,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.089927,
+        "0.1": 0.090998,
+        "1.0": 0.09174,
+        "10.0": 0.092184,
+        "100.0": 0.089573
+      }
+    },
+    "boltzmann|relu|w64|d32|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.011082,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.089927,
+        "0.1": 0.090998,
+        "1.0": 0.09174,
+        "10.0": 0.092184,
+        "100.0": 0.089573
+      }
+    },
+    "boltzmann|relu|w64|d4|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.011082,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.089927,
+        "0.1": 0.090998,
+        "1.0": 0.09174,
+        "10.0": 0.092184,
+        "100.0": 0.089573
+      }
+    },
+    "boltzmann|relu|w64|d8|cifar10": {
+      "arch": "boltzmann",
+      "cv": 0.011082,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.089927,
+        "0.1": 0.090998,
+        "1.0": 0.09174,
+        "10.0": 0.092184,
+        "100.0": 0.089573
+      }
+    },
+    "transformer_preln|relu|w256|d4|cifar10": {
+      "arch": "transformer_preln",
+      "cv": 0.006105,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.022614,
+        "0.1": 0.022609,
+        "1.0": 0.022651,
+        "10.0": 0.022525,
+        "100.0": 0.022272
+      }
+    },
+    "transformer_preln|relu|w64|d4|cifar10": {
+      "arch": "transformer_preln",
+      "cv": 0.008179,
+      "t_invariant": true,
+      "curve": {
+        "0.01": 0.087889,
+        "0.1": 0.087831,
+        "1.0": 0.089288,
+        "10.0": 0.089475,
+        "100.0": 0.089232
+      }
+    },
+    "_arch_summary": {
+      "boltzmann": {
+        "t_invariant_fraction": 1.0,
+        "overall_verdict": "T-invariant"
+      },
+      "transformer_preln": {
+        "t_invariant_fraction": 1.0,
+        "overall_verdict": "T-invariant"
+      }
+    }
+  },
+  "maxent": {
+    "boltzmann|w64": {
+      "kappa_input": 0.09174,
+      "kappa_max": 0.097474,
+      "eta": 0.941173,
+      "d_z": 64
+    },
+    "boltzmann|w128": {
+      "kappa_input": 0.046204,
+      "kappa_max": 0.048737,
+      "eta": 0.94803,
+      "d_z": 128
+    },
+    "boltzmann|w256": {
+      "kappa_input": 0.023305,
+      "kappa_max": 0.024368,
+      "eta": 0.956355,
+      "d_z": 256
+    },
+    "boltzmann|w512": {
+      "kappa_input": 0.011681,
+      "kappa_max": 0.012184,
+      "eta": 0.958668,
+      "d_z": 512
+    },
+    "cnn|w64": {
+      "kappa_input": 0.085573,
+      "kappa_max": 0.097474,
+      "eta": 0.877904,
+      "d_z": 64
+    },
+    "cnn|w128": {
+      "kappa_input": 0.042956,
+      "kappa_max": 0.048737,
+      "eta": 0.881386,
+      "d_z": 128
+    },
+    "cnn|w256": {
+      "kappa_input": 0.021576,
+      "kappa_max": 0.024368,
+      "eta": 0.885426,
+      "d_z": 256
+    },
+    "gru|w64": {
+      "kappa_input": 0.087566,
+      "kappa_max": 0.097474,
+      "eta": 0.898357,
+      "d_z": 64
+    },
+    "gru|w128": {
+      "kappa_input": 0.044562,
+      "kappa_max": 0.048737,
+      "eta": 0.914346,
+      "d_z": 128
+    },
+    "gru|w256": {
+      "kappa_input": 0.022472,
+      "kappa_max": 0.024368,
+      "eta": 0.922184,
+      "d_z": 256
+    },
+    "gru|w512": {
+      "kappa_input": 0.011387,
+      "kappa_max": 0.012184,
+      "eta": 0.934571,
+      "d_z": 512
+    },
+    "mlp|w64": {
+      "kappa_input": 0.090515,
+      "kappa_max": 0.097474,
+      "eta": 0.928607,
+      "d_z": 64
+    },
+    "mlp|w128": {
+      "kappa_input": 0.045562,
+      "kappa_max": 0.048737,
+      "eta": 0.93486,
+      "d_z": 128
+    },
+    "mlp|w256": {
+      "kappa_input": 0.022952,
+      "kappa_max": 0.024368,
+      "eta": 0.941885,
+      "d_z": 256
+    },
+    "mlp|w512": {
+      "kappa_input": 0.01155,
+      "kappa_max": 0.012184,
+      "eta": 0.947923,
+      "d_z": 512
+    },
+    "parallel|w64": {
+      "kappa_input": 0.088934,
+      "kappa_max": 0.097474,
+      "eta": 0.91239,
+      "d_z": 64
+    },
+    "parallel|w128": {
+      "kappa_input": 0.044745,
+      "kappa_max": 0.048737,
+      "eta": 0.918084,
+      "d_z": 128
+    },
+    "parallel|w256": {
+      "kappa_input": 0.02247,
+      "kappa_max": 0.024368,
+      "eta": 0.922096,
+      "d_z": 256
+    },
+    "parallel|w512": {
+      "kappa_input": 0.011215,
+      "kappa_max": 0.012184,
+      "eta": 0.920483,
+      "d_z": 512
+    },
+    "serial|w64": {
+      "kappa_input": 0.086388,
+      "kappa_max": 0.097474,
+      "eta": 0.886269,
+      "d_z": 64
+    },
+    "serial|w128": {
+      "kappa_input": 0.043548,
+      "kappa_max": 0.048737,
+      "eta": 0.893531,
+      "d_z": 128
+    },
+    "serial|w256": {
+      "kappa_input": 0.021836,
+      "kappa_max": 0.024368,
+      "eta": 0.896075,
+      "d_z": 256
+    },
+    "serial|w512": {
+      "kappa_input": 0.01086,
+      "kappa_max": 0.012184,
+      "eta": 0.89129,
+      "d_z": 512
+    },
+    "transformer_postln|w64": {
+      "kappa_input": 0.089344,
+      "kappa_max": 0.097474,
+      "eta": 0.916596,
+      "d_z": 64
+    },
+    "transformer_postln|w128": {
+      "kappa_input": 0.044727,
+      "kappa_max": 0.048737,
+      "eta": 0.917722,
+      "d_z": 128
+    },
+    "transformer_postln|w256": {
+      "kappa_input": 0.021648,
+      "kappa_max": 0.024368,
+      "eta": 0.888353,
+      "d_z": 256
+    },
+    "transformer_postln|w512": {
+      "kappa_input": 0.010592,
+      "kappa_max": 0.012184,
+      "eta": 0.869332,
+      "d_z": 512
+    },
+    "transformer_preln|w64": {
+      "kappa_input": 0.089337,
+      "kappa_max": 0.097474,
+      "eta": 0.91652,
+      "d_z": 64
+    },
+    "transformer_preln|w128": {
+      "kappa_input": 0.045028,
+      "kappa_max": 0.048737,
+      "eta": 0.92389,
+      "d_z": 128
+    },
+    "transformer_preln|w256": {
+      "kappa_input": 0.022554,
+      "kappa_max": 0.024368,
+      "eta": 0.925522,
+      "d_z": 256
+    },
+    "transformer_preln|w512": {
+      "kappa_input": 0.011154,
+      "kappa_max": 0.012184,
+      "eta": 0.915405,
+      "d_z": 512
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Secrets
+*.pem
+.env
+*.key
+
+# Scratch / per-run outputs (not the released results)
+data/
+logs/
+results/shard_*.jsonl
+results/scratch_*.jsonl
+results_p6/shard_*.jsonl
+results_p6/scratch_*.jsonl
+
+# Editor
+.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
