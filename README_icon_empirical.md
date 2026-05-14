@@ -344,7 +344,14 @@ Please open an issue before starting large changes.
 This repository is released under the license included in this repository.
 
 ---
+## DOI
+
+- Zenodo DOI: https://doi.org/10.5281/zenodo.20184000
+- GitHub Release: https://github.com/joonhai-official/icon-empirical/releases/tag/v0.1.0
+
+---
 
 ## Related Repositories
 
 - [`joonhai-official/icon`](https://github.com/joonhai-official/icon) — general ICON framework repository
+  
